@@ -1,0 +1,5 @@
+MailQueueIAM:
+    Effect: Allow
+    Auction: 
+        - sqs:ReceiveMessage
+    Resource: ${self:custom.mailQueue.arn}
